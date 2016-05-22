@@ -4,7 +4,7 @@ const VideoDetail = ({video}) =>{
   if(!video) {
     return <div>Loading ... </div>
   }
-  
+  console.log(video);
   const videoId = video.id.videoId;
   const url = `http://www.youtube.com/embed/${videoId}`;
 
@@ -15,7 +15,7 @@ const VideoDetail = ({video}) =>{
       </div>
       <div className="details">
         <div>{video.snippet.title}</div>
-        <div>{video.snippet.descrption}</div>
+        <div>{video.snippet.description}</div>
       </div>
     </div>
   )
